@@ -1,0 +1,28 @@
+provider,instance_type,vcpus,ram_gb,hourly_cost,spot_hourly_rate,region,category,notes
+aws,c7g.16xlarge,64,128,2.17,0.87,us-east-1,compute,Graviton3 compute optimized
+aws,c7g.32xlarge,128,256,4.34,1.74,us-east-1,compute,Graviton3 128 vCPU
+aws,c6i.32xlarge,128,256,5.44,1.63,us-east-1,compute,Ice Lake compute
+aws,r7g.16xlarge,64,512,3.33,1.33,us-east-1,memory,Graviton3 memory optimized
+aws,r7i.16xlarge,64,512,3.75,1.50,us-east-1,memory,Sapphire Rapids memory
+aws,m7g.16xlarge,64,256,2.63,1.05,us-east-1,general,Graviton3 balanced
+aws,m7i.32xlarge,128,512,6.45,2.58,us-east-1,general,Sapphire Rapids balanced
+gcp,c3-highcpu-176,176,352,7.76,2.33,us-central1,compute,Sapphire Rapids
+gcp,c3-standard-176,176,704,10.59,3.18,us-central1,compute,Sapphire Rapids balanced
+gcp,n2-highcpu-96,96,96,3.41,1.02,us-central1,compute,Cascade Lake high-CPU
+gcp,n2-standard-128,128,512,6.46,1.94,us-central1,general,Cascade Lake balanced
+gcp,n2-highmem-128,128,864,9.29,2.79,us-central1,memory,Cascade Lake memory
+gcp,c2d-standard-112,112,448,5.13,1.54,us-central1,compute,AMD Milan compute
+gcp,e2-standard-16,16,64,0.62,0.19,us-central1,budget,E2 cost-optimized
+azure,Standard_D128ds_v6,128,512,7.56,3.02,eastus,general,Sapphire Rapids G6
+azure,Standard_F128s_v2,128,256,5.49,2.20,eastus,compute,Compute Fsv2
+azure,Standard_E128ds_v6,128,1024,11.34,4.54,eastus,memory,Memory E6
+azure,Standard_D16ds_v5,16,64,0.87,0.35,eastus,general,D5 balanced
+azure,Standard_B16als_v2,16,32,0.54,,eastus,budget,Burstable Bsv2
+digitalocean,c-32-intel,32,64,0.91,,,nyc1,compute,Intel compute droplet
+digitalocean,g-32-intel,32,128,1.16,,,nyc1,general,Intel general droplet
+digitalocean,m-32-intel,32,256,1.78,,,nyc1,memory,Intel memory droplet
+digitalocean,c-16-amd,16,32,0.35,,,nyc1,compute,AMD compute droplet
+akamai,Shared-16,16,32,0.54,,,us-east,general,Shared CPU plan
+akamai,Dedicated-32,32,64,0.91,,,us-east,compute,Dedicated CPU
+akamai,Premium-64,64,256,2.59,,,us-east,premium,Premium dedicated
+akamai,Nanode-1G,1,1,0.01,,,us-east,budget,Nanode budget tier

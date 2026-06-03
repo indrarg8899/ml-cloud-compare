@@ -1,2 +1,4 @@
-"""ml-cloud-compare: Cloud GPU cost-performance comparison tool."""
-__version__ = "0.1.0"
+"""ML Cloud Compute Cost Comparison Tool."""
+
+__version__ = "1.0.0"
+__author__ = "indrarg8899"

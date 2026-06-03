@@ -1,15 +1,23 @@
-boto3>=1.34.0
-azure-mgmt-compute>=30.0.0
-google-cloud-compute>=1.14.0
-requests>=2.31.0
-pandas>=2.1.0
-numpy>=1.24.0
-tabulate>=0.9.0
-rich>=13.7.0
-click>=8.1.7
-jinja2>=3.1.0
-pyyaml>=6.0.1
-plotly>=5.18.0
-kaleido>=0.2.1
-openpyxl>=3.1.0
-weasyprint>=60.0
+# Requirements for ML Cloud Compute Comparison Tool
+
+# Core
+pyyaml>=6.0
+
+# Data
+pandas>=2.0
+numpy>=1.24
+
+# Visualization
+matplotlib>=3.7
+plotly>=5.15
+
+# CLI
+argparse>=1.4
+
+# Testing
+pytest>=7.0
+pytest-cov>=4.0
+
+# Optional
+jinja2>=3.1
+requests>=2.31

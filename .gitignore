@@ -3,34 +3,35 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.so
-.Python
-venv/
-.venv/
 *.egg-info/
 dist/
 build/
-.eggs/
+*.egg
 
-# Data
-*.csv
-*.json
-!data/defaults.json
-output/
+# Virtual environments
+venv/
+.venv/
+env/
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
+*~
 
 # OS
 .DS_Store
 Thumbs.db
 
-# Logs
-*.log
-logs/
+# Reports (generated)
+reports/
+*.html
 
-# Env
+# Data
+data/*.pyc
+results/
+
+# Config
+*.local.yml
 .env
-*.env.local

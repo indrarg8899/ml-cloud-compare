@@ -1,0 +1,60 @@
+# ML Cloud Compare — Default Configuration
+# Customize these values to match your needs.
+
+# ── General Settings ──
+default_providers:
+  - aws
+  - gcp
+  - azure
+  - digitalocean
+  - akamai
+
+default_region: us-east-1
+currency: USD
+include_spot_pricing: true
+
+# ── Workload Defaults ──
+workload:
+  type: training           # training, inference, fine_tuning, batch
+  gpu_type: h100
+  gpu_count: 8
+  duration_hours: 48
+  storage_gb: 500
+  data_transfer_gb: 100
+  spot_enabled: false
+
+# ── Analysis Settings ──
+analysis:
+  model_params_b: 13.0     # Model size in billions of parameters
+  prioritize: balanced     # cost, performance, balanced, availability
+  max_recommendations: 5
+  include_reserved: false
+  reserved_years: 1        # 1 or 3 year reserved pricing
+
+# ── Report Settings ──
+report:
+  format: html             # html, json, markdown
+  output_dir: ./reports
+  include_charts: true
+  include_methodology: true
+  logo_url: ""
+
+# ── Benchmark Settings ──
+benchmarks:
+  run_synthetic: true
+  run_inference: true
+  inference_model: llama-7b
+  batch_sizes: [1, 8, 32]
+  precision: [fp16, bf16, fp8]
+  warmup_iterations: 10
+  measurement_iterations: 100
+
+# ── Cost Optimization Thresholds ──
+optimization:
+  # Alert if cost exceeds these thresholds
+  max_hourly_rate: 100.00
+  max_monthly_budget: 50000.00
+  # Spot savings threshold to recommend spot
+  min_spot_savings_pct: 40
+  # Reserved instance threshold
+  min_reserved_savings_pct: 30

@@ -1,0 +1,37 @@
+provider,instance_type,gpu_type,gpu_count,vcpus,ram_gb,hourly_cost,spot_hourly_rate,region,notes
+aws,p5.48xlarge,h100,8,192,2048,98.32,49.16,us-east-1,Up to 3200Gbps NVLink
+aws,p4d.24xlarge,a100,8,96,1152,32.77,16.39,us-east-1,400Gbps NVLink interconnect
+aws,p4de.24xlarge,a100,8,96,1536,40.97,20.49,us-east-1,80GB A100 variant
+aws,p5e.48xlarge,h200,8,192,2048,120.00,60.00,us-east-1,H200 with 141GB HBM3e
+aws,g6.12xlarge,l4,4,48,192,9.52,4.76,us-east-1,Inference optimized
+aws,g6.xlarge,t4,1,4,16,1.10,0.55,us-east-1,Budget inference
+aws,g5.12xlarge,a10g,4,48,192,16.28,8.14,us-east-1,A10G gaming/inference
+aws,g5.24xlarge,a10g,8,96,384,32.56,16.28,us-east-1,A10G multi-GPU
+gcp,a3-highgpu-8g,h100,8,208,1872,94.13,28.24,us-central1,Best spot discounts
+gcp,a2-highgpu-8g,a100,8,96,1360,29.39,8.82,us-central1,Deep discount for preemptible
+gcp,a2-highgpu-4g,a100,4,48,680,14.69,4.41,us-central1,Half-node A100
+gcp,g2-standard-48,l4,4,48,192,8.84,2.65,us-central1,Good price/perf ratio
+gcp,n1-standard-8-t4,t4,1,8,30,1.05,0.32,us-central1,Budget inference
+gcp,g2-standard-24,l4,2,24,96,4.42,1.33,us-central1,Dual L4
+gcp,a3-highgpu-8g-megagpu,h100,8,208,1872,98.31,29.49,us-central1,Mega GPU config
+azure,Standard_ND96isr_H100_v5,h100,8,96,1900,100.20,40.08,eastus,InfiniBand v5
+azure,Standard_NC96isr_H100_v5,h100,8,96,1900,98.32,39.33,eastus,Alternative H100 SKU
+azure,Standard_ND96asr_v4,a100,8,96,900,27.19,10.88,eastus,A100 with 80GB
+azure,Standard_NC24ads_A100_v4,a100,1,24,220,3.67,1.47,eastus,Single A100
+azure,Standard_NC4as_T4_v3,t4,1,4,28,1.14,0.46,eastus,Budget inference
+azure,Standard_NC8as_T4_v3,t4,2,8,56,2.28,0.91,eastus,Dual T4
+azure,Standard_NV36ads_A10_v5,a10,1,36,440,3.67,1.47,eastus,A10 for inference
+digitalocean,gpu-h100-1x,h100,1,24,320,5.39,,nyc1,Single H100 droplet
+digitalocean,gpu-h100-8x,h100,8,192,2560,43.10,,nyc1,8x H100 droplet
+digitalocean,gpu-a100-1x,a100,1,24,320,2.89,,nyc1,Single A100
+digitalocean,gpu-a100-8x,a100,8,192,2560,23.10,,nyc1,8x A100
+digitalocean,gpu-a10-1x,a10,1,24,320,1.10,,nyc1,Single A10
+digitalocean,gpu-rtx6000-1x,rtx6000,1,12,64,0.76,,nyc1,Budget GPU
+digitalocean,gpu-rtx6000-4x,rtx6000,4,48,256,3.04,,nyc1,Quad RTX6000
+akamai,GPU-f48000-x1,h100,1,24,512,4.99,,us-east,Single H100
+akamai,GPU-f48000-x8,h100,8,192,4096,39.90,,us-east,8x H100 Linode
+akamai,GPU-a100-xl,a100,1,24,320,2.49,,us-east,Single A100
+akamai,GPU-a100-8xl,a100,8,192,2560,19.90,,us-east,8x A100
+akamai,GPU-rtx6000-x1,rtx6000,1,12,64,0.65,,us-east,Budget GPU
+akamai,GPU-l4-x1,l4,1,24,96,1.10,,us-east,Inference GPU
+akamai,GPU-t4-x1,t4,1,4,16,0.50,,us-east,Budget inference
